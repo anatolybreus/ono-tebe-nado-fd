@@ -10,24 +10,77 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <!--Навигация-->
+      <nav class="header__menu">
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Посмотреть лоты</a></li>
-          <li><a href="#">Об аукционе</a></li>
+          <li class="herader__links-list-item"><a href="#" class="header__link">главная</a></li>
+          <li class="herader__links-list-item"><a href="#" class="header__link">посмотреть лоты</a></li>
+          <li class="herader__links-list-item"><a href="#" class="header__link">об аукционе</a></li>
         </ul>
       </nav>
-      <a href="#" class="logo">ОНО ТЕБЕ НАДО</a>
+    <!--Логотип-->
+      <a href="#" class="header__logo">
+        <img src="./images/logo-black.svg" alt="Логотип оно тебе надо черный" class="header__logo-image">
+      </a>
+    <!--Контакты-->
       <address>
-        <p>+9 999 555 5555</p>
-        <p><a gref="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
+        <p><a href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
 
-    <main>
-
+  <main>
+    <!--Обложка-->
+    <section class="cover">
+      <div class="overlay"></div>
+      <h1 class="cover__title">
+        <span class="aligned-text">ОНО</span>
+        <span class="aligned-text_center">ТЕБЕ</span>
+        <span class="aligned-text_right">НАДО</span>
+      </h1>
+      <div class="cover__description">
+        <p class="cover__description-text letter-spacing-extended">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p> <!--Включил два класса так как межбуквенное растояние больше нигде не встречается-->
+        <button>СДЕЛАТЬ СТАВКУ</button>
+      </div>
+    </section>
+    <!--Лоты-->
+    <section class="lots">
+      <h2 class="lots__heading">ЛОТЫ</h2>
+      <ul class="lots__card-list">
+        <li class="lots__card-list-item">
+          <a href="#" class="card-link">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="car__title">Фильм режиссёра, который бросил киношколу</h3>
+              <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+            </article>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a href="#" class="card-link">
+            <article class="card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="car__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+            </article>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a href="#" class="card-link">
+            <article class="card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="car__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+              <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+            </article>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="lots__look-more-link">Посмотреть больше</a>
+    </section>
+    <!--Эбаут-->
+    
     </main>
   </body>
 </html>
