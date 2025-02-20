@@ -13,8 +13,8 @@
     <header class="header">
       <!--Навигация-->
       <nav class="header__menu">
-        <ul>
-          <li class="herader__links-list-item"><a href="#" class="header__link">главная</a></li>
+        <ul class="header__links-list">
+          <li class="herader__links-list-item"><a href="#" class="header__link_active">главная</a></li>
           <li class="herader__links-list-item"><a href="#" class="header__link">посмотреть лоты</a></li>
           <li class="herader__links-list-item"><a href="#" class="header__link">об аукционе</a></li>
         </ul>
@@ -24,7 +24,7 @@
         <img src="./images/logo-black.svg" alt="Логотип оно тебе надо черный" class="header__logo-image">
       </a>
     <!--Контакты-->
-      <address>
+      <address class="header__address">
         <p><a href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
         наб. Принсенграхт 263-265, Амстердам</p>
@@ -34,15 +34,16 @@
   <main>
     <!--Обложка-->
     <section class="cover">
+      <div class="cover__background" style="background-image: url(../ono-tebe-nado-fd/images/cover.jpg);"></div>
       <div class="overlay"></div>
       <h1 class="cover__title">
-        <span class="aligned-text">ОНО</span>
-        <span class="aligned-text_center">ТЕБЕ</span>
-        <span class="aligned-text_right">НАДО</span>
+        <span class="aligned-text aligned-text_center">ОНО</span>
+        <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+        <span class="aligned-text aligned-text_center">НАДО</span>
       </h1>
       <div class="cover__description">
-        <p class="cover__description-text letter-spacing-extended">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p> <!--Включил два класса так как межбуквенное растояние больше нигде не встречается-->
-        <button>СДЕЛАТЬ СТАВКУ</button>
+        <p class="cover__description-text">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</p> <!--Включил два класса так как межбуквенное растояние больше нигде не встречается-->
+        <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
       </div>
     </section>
     <!--Лоты-->
@@ -81,9 +82,9 @@
     </section>
     <!--Эбаут-->
     <section class="about">
-      <div class="about__column">
+      <div class="about__column about__column_logo">
         <div class="about__logo">
-          <img src="./images/logo-white.svg" alt="Лого белый" class="header__logo-image">
+          <img src="./images/logo-white.svg" alt="Лого белый" class="about__logo-image">
         </div>
       </div>
       <div class="about__column">
