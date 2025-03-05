@@ -281,16 +281,16 @@
     font-weight: 400;
     line-height: normal;
     text-align: match-parent;
-    margin: 0 10px 5px 0;
     max-width: 690px;
+    margin-top: -24px;
 }
 
-.about__text p:nth-child(1) {
-    padding-bottom: 24px;
+.about__text p {
+    margin-top: 24px;
 }
 
 .footer {
-    margin: 0 50px 0 50px;
+    margin: 0 50px 50px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
